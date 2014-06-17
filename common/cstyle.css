@@ -1,62 +1,246 @@
-/*
-Syntax error: Invalid CSS after "...ia only screen ": expected "{", was "sand (min-devic..."
-        on line 98 of C:/Users/Mitko/Documents/GitHub/TeamRamoth/sass/cstyle.scss
+/*including the reset and base css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-C:/Users/Mitko/Documents/GitHub/TeamRamoth/sass/cstyle.scss:98
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:534:in `block'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:349:in `media_directive'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-C:/Ruby200-x64/bin/compass:23:in `load'
-C:/Ruby200-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...ia only screen \": expected \"{\", was \"sand (min-devic...\"\A         on line 98 of C:/Users/Mitko/Documents/GitHub/TeamRamoth/sass/cstyle.scss"; }
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Box model */
+.blk {
+  display: block;
+}
+
+.inl {
+  display: inline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clL {
+  clear: left;
+}
+
+.clR {
+  clear: right;
+}
+
+/* Typography */
+.fwB {
+  font-weight: bold;
+}
+
+.fsO {
+  font-style: oblique;
+}
+
+.taR {
+  text-align: right;
+}
+
+.taL {
+  text-align: left;
+}
+
+.taC {
+  text-align: center;
+}
+
+.tdU {
+  text-decoration: underline;
+}
+
+.tdN {
+  text-decoration: none;
+}
+
+.ir {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* Generic image button - can be applied to "a", "button" or "input[type=submit]" */
+.btn {
+  display: block;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -1000em;
+  cursor: pointer;
+}
+
+/*including the compass css3 plugin*/
+/* variable for  max page witdh*/
+/*class for container which has to clear floats*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  font-family: Arial,sans-serif;
+}
+
+body {
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+* {
+  outline: none;
+}
+
+/* CHANGE LATER */
+.page-wrap {
+  width: 100%;
+}
+
+.wrap {
+  width: 880px;
+  max-width: 97%;
+  margin: auto;
+  /* R E M O V E */
+  border-left: 1px solid cyan;
+  border-right: 1px solid cyan;
+  min-height: 300px;
+  background-color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+  background-color: #ecf0f1;
+}
+
+body {
+  background-color: #fff;
+  font-family: Verdana,Arial,sans-serif;
+  width: 100%;
+  /*overflow-x:hidden;*/
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
