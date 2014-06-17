@@ -11,9 +11,59 @@
     <!-- link to example font from google fonts which can be easily used with css -->
     <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Share+Tech' rel='stylesheet' type='text/css'>
 
+    <link href='common/cstyle.css' rel='stylesheet' type='text/css'>
+
+    <!-- including html5 shiv for displaying correctly new html5 tags on ie8 or earlier -->
+
+    <!--[if lte IE 9]>
+    <script src="common/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- including the JQuery library and a migrate plugin for back compatibility with old versions -->
+ 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- including main js file with script functions -->
+	<script src="common/functions.js"></script>
+
 	<title>TeamRamoth &bull;SoftUni Jokes &bull; Beta Version</title>
 </head>
 <body>
-	
+	<div class="page-wrap">
+        <header class="header">
+            <div class="wrap">
+                <p>
+                    <h1>Header...</h1>
+                </p>
+            </div>
+        </header>
+         
+        <div class="wrap clearfix">
+            <h2 class="taC">Main Content...</h2>
+            <nav id="left-aside" class="left">
+        		<ul>
+        			<li><a href="#">Category-1</a></li>
+        			<li><a href="#">Category-2</a></li>
+        			<li><a href="#">Category-3</a></li>
+            	</ul>
+            </nav>
+            <div class="main-content right">
+            	<ul>
+            		<li>
+            			<a href="#">
+            				<img src="http://placehold.it/300x270/333333/ffffff" />
+            			</a>
+            		</li>
+            	</ul>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="wrap">
+                <h3>Footer...</h3>
+            </div>
+        </footer>
+    </div> 
 </body>
 </html>

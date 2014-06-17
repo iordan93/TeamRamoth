@@ -1,0 +1,125 @@
+/*including the reset and base css*/
+@import 'base';
+
+/*including the compass css3 plugin*/
+@import 'compass/css3';
+
+/* variable for  max page witdh*/
+$width:900px;
+
+/*class for container which has to clear floats*/
+.clearfix{
+    zoom:1;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}
+
+img{
+	max-width:100%;
+}
+a{
+	text-decoration:none;
+	&:hover{
+		text-decoration: none;
+	}
+    &:focus{
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+html{
+    -webkit-overflow-scrolling: touch;
+    font-family: Arial,sans-serif;
+}
+
+body{
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+* {
+  outline: none;
+}
+
+/* CHANGE LATER */
+
+.page-wrap {
+  width: 100%;
+}
+
+.wrap {
+  width: 880px;
+  max-width: 97%;
+  margin: auto;
+  /* R E M O V E */
+  border-left: 1px solid cyan;
+  border-right: 1px solid cyan;
+  min-height: 300px;
+  background-color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+  background-color: #ecf0f1;
+}
+
+body {
+  background-color: #fff;
+  font-family: Verdana,Arial,sans-serif;
+  width: 100%;
+  /*overflow-x:hidden;*/
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen sand (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) sand (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

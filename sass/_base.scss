@@ -1,0 +1,22 @@
+@import "compass/reset";
+/* Box model */
+.blk { display: block }
+.inl { display: inline }
+.left { float: left }
+.right { float: right }
+.clear { clear: both }
+.clL { clear: left }
+.clR { clear: right }
+
+/* Typography */
+.fwB { font-weight: bold }
+.fsO { font-style: oblique }
+.taR { text-align: right }
+.taL { text-align: left }
+.taC { text-align: center }
+.tdU { text-decoration: underline }
+.tdN { text-decoration: none }
+.ir { font-size: 0; line-height: 0; text-indent: -9999px }
+
+/* Generic image button - can be applied to "a", "button" or "input[type=submit]" */
+.btn { display: block; border: 0; background-repeat: no-repeat; background-position: 0 0; background-color: transparent; font-size: 0; line-height: 0; text-indent: -1000em; cursor: pointer }
