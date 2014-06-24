@@ -197,14 +197,11 @@ body {
   border-bottom: 1px solid #333;
 }
 
-.footer {
-  background-color: #ecf0f1;
-}
-
 body {
   background-color: #fff;
   font-family: Verdana,Arial,sans-serif;
   width: 100%;
+  background-image: url("../images/wild_oliva.png");
   /*overflow-x:hidden;*/
 }
 
