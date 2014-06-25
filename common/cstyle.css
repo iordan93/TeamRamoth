@@ -196,15 +196,16 @@ body {
   font-family: Verdana,Arial,sans-serif;
   width: 100%;
   /*background-image: url("../images/wild_oliva.png");*/
-  background-image: url("../images/bg.gif");
+  background-image: url("../images/bg.png");
   background-color: #000d22;
   background-position: center top;
-  background-repeat: repeat-y;
   /*overflow-x:hidden;*/
 }
 
 .header {
   padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 a.logo {
@@ -229,9 +230,53 @@ a.logo .over-logo {
   /* Opera, Chrome, and Safari */
 }
 
+ul.tabs li {
+  float: left;
+  width: 30%;
+  position: relative;
+  height: 60px;
+}
+ul.tabs li a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  font-family: "Share Tech",sans-serif;
+  position: relative;
+}
+ul.tabs li a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ul.tabs li.all {
+  width: 10%;
+}
+ul.tabs li.all a {
+  background-color: #fff;
+}
+ul.tabs li.when-you a {
+  background-color: #FFD783;
+}
+ul.tabs li.memes a {
+  background-color: #FF6624;
+}
+ul.tabs li.it-life a {
+  background-color: #A8C6FA;
+}
+ul.tabs li.current a, ul.tabs li:hover a {
+  background-image: url("../images/arrow-top.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 480px) {
   /* Styles */
+  ul.tabs li a {
+    font-size: 14px;
+  }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
