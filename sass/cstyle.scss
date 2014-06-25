@@ -59,12 +59,6 @@ body{
   width: $width;
   max-width: 97%;
   margin: auto;
-  /* R E M O V E */
-  border-left: 1px solid cyan;
-  border-right: 1px solid cyan;
-  min-height: 300px;
-  background-color: #ccc;
-  border-bottom: 1px solid #333;
 }
 
 .footer {
@@ -75,10 +69,35 @@ body {
   background-color: #fff;
   font-family: Verdana,Arial,sans-serif;
   width: 100%;
-  background-image: url("../images/wild_oliva.png");
+  /*background-image: url("../images/wild_oliva.png");*/
+  background-image: url("../images/bg.gif");
+  background-color: #000d22;
+  background-position: center top;
+  background-repeat: repeat-y;
   /*overflow-x:hidden;*/
 }
-
+.header{
+  padding-top:20px;
+}
+a.logo{
+  float: left;
+  position: relative;
+  .over-logo{
+    position: absolute;
+    top:18px;
+    right:35px;
+    color:#FF3333;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Share Tech",sans-serif;
+    text-shadow:3px 3px 0 #333;
+    display: block;
+    padding: 5px;
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); /* IE 9 */
+    -webkit-transform:rotate(-10deg); /* Opera, Chrome, and Safari */
+  }
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
