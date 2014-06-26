@@ -40,7 +40,18 @@ function windowRefresh(){
 	});
 
 	
+
+	$(".team ul li").each(function(){
+		var img=$(this).find("img");
+
+		img.css({
+			'height':img.width()
+		});
+	})
+
+
 	centerImages();
+
 }
 
 function centerImages(){
@@ -72,6 +83,5 @@ function centerImages(){
 			'top':0,
 			'left':0
 		});
-
 	});
 }

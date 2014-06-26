@@ -350,6 +350,34 @@ a.list {
   position: relative;
 }
 
+.team {
+  width: 660px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.team ul li {
+  width: 33.333333333333333333333%;
+  float: left;
+}
+.team ul li img {
+  border-radius: 50%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 30px;
+}
+.footer h3 {
+  line-height: 40px;
+  font-size: 30px;
+  font-family: "Share Tech",sans-serif;
+  color: #fff;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 319px) and (max-device-width: 480px) {
   /* Styles */
