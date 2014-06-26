@@ -271,6 +271,85 @@ ul.tabs li.current a, ul.tabs li:hover a {
   background-position: center bottom;
 }
 
+.view-choice {
+  background-color: #333;
+  border-bottom: 1px solid #ccc;
+}
+.view-choice a {
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  float: left;
+  margin: 10px;
+  background-repeat: no-repeat;
+  text-indent: 25px;
+  color: #fff;
+  font-size: 14px;
+}
+.view-choice a:hover {
+  text-decoration: underline;
+}
+
+a.grid {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARAQMAAAABo9W5AAAABGdBTUEAALGPC/xhBQAAAAZQTFRFAAAAzMzMyE/AMgAAAAF0Uk5TAEDm2GYAAAASSURBVAjXY/hf38CAD4MAATUARDAf4TM5u24AAAAASUVORK5CIIA=");
+}
+
+a.list {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOAQMAAADzI2X3AAAABGdBTUEAALGPC/xhBQAAAAZQTFRFAAAAzMzMyE/AMgAAAAF0Uk5TAEDm2GYAAAASSURBVAjXY/j/v4EBhNEBAXEApfEO9cP7GW8AAAAASUVORK5CIIA=");
+  background-position: 0px 2px;
+}
+
+.tabs-content {
+  background-color: #eee;
+}
+.tabs-content ul li {
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+.tabs-content ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  width: 200px;
+  height: 200px;
+}
+.tabs-content ul li a h2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 30px;
+  color: #333;
+  font-size: 17px;
+  z-index: 99;
+}
+.tabs-content ul li a img {
+  max-width: 300px;
+  position: absolute;
+  z-index: 98;
+}
+
+.tabs-content ul.list-view li {
+  width: 100%;
+  margin: 10px 0;
+}
+.tabs-content ul.list-view li a {
+  width: 100%;
+}
+.tabs-content ul.list-view li a h2 {
+  position: relative;
+  float: right;
+  background-color: transparent;
+}
+.tabs-content ul.list-view li a img {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin-left: 10px;
+  position: relative;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 319px) and (max-device-width: 480px) {
   /* Styles */
@@ -294,11 +373,12 @@ ul.tabs li.current a, ul.tabs li:hover a {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
 }
-/* iPads (portrait) ----------- */
+/* iPads (fportrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
 }
-/* Desktops and laptops ----------- */
+/* Des
+ktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
 }
