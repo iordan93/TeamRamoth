@@ -178,7 +178,7 @@ a.list{
 }
 
 .tabs-content{
-  background-color: #eee;
+  background-color: #fff;
   ul{
     li{
       float: left;
@@ -195,16 +195,20 @@ a.list{
           position:absolute;
           width:100%;
           text-align:center;
-          background-color:rgba(255,255,255,0.5);
+          background-color:rgba(255,255,255,0.9);
           line-height:30px;
           color:#333;
           font-size:17px;
           z-index: 99;
+          font-family: "Share Tech",sans-serif;
         }
         img{
           max-width: 300px;
           position: absolute;
           z-index: 98;
+        }
+        p{
+          display: none;
         }
       }
     }
@@ -215,20 +219,39 @@ a.list{
   ul.list-view{
     li{
       width:100%;
-      margin: 10px 0;
+      padding:20px 0;
+      margin:0;
+      background-color: rgba(100,100,100,0.2);
+      position: relative;
       a{
         width:100%;
         h2{
           position: relative;
           float: right;
+          width:70%;
+          text-align: left;
+          text-indent: 10px;
+          font-size: 35px;
+          margin-top:20px;
+          margin-bottom:30px;
           background-color: transparent;
         }
         img{
           float: left;
-          width:300px;
+          width:29%;
           height:auto;
-          margin-left:10px;
+          margin-left:1%;
           position: relative;
+        }
+        p{
+          float: left;
+          display: block;
+          left:30%;
+          padding-left:10px;
+          width:60%;
+          color:#333;
+          font-family: Arial,sans-serif;
+          margin-bottom: 50px;
         }
       }
     }
@@ -237,7 +260,15 @@ a.list{
 
 ul.grid-view{
   li{
-    
+    a{
+      h2{
+        font-size: 22px;
+        top:38%;
+      }
+      img{
+
+      }
+    }
   }
 }
 

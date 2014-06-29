@@ -3,7 +3,7 @@ $(function(){
 
     windowRefresh();
 
-	$(window).on('resize',function(){
+	$(window).on('load resize',function(){
 		windowRefresh();
 	});
 
@@ -19,10 +19,6 @@ $(function(){
 		e.preventDefault();
 	});
 	
-    
-
-
-
 });
 
 function windowRefresh(){
