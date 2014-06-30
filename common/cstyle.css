@@ -230,6 +230,33 @@ a.logo .over-logo {
   /* Opera, Chrome, and Safari */
 }
 
+ul.socials {
+  height: 40px;
+}
+ul.socials li {
+  float: left;
+  margin: 10px;
+}
+ul.socials li a {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.sprite {
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+}
+.sprite.fb {
+  background-position: -96px 0;
+}
+.sprite.tw {
+  background-position: -145px 0;
+}
+.sprite.like {
+  background-position: -48px 0;
+}
+
 ul.tabs li {
   float: left;
   width: 30%;
@@ -333,6 +360,33 @@ a.list {
 .tabs-content ul li a p {
   display: none;
 }
+.tabs-content ul li .likes {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background-image: url("../images/bg.png");
+  border-radius: 30px 0 0 30px;
+  width: 40px;
+  padding: 10px 0;
+  padding-left: 10px;
+}
+.tabs-content ul li .likes a {
+  float: left;
+  width: 40px !important;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px 0;
+  position: relative;
+}
+.tabs-content ul li .likes a span {
+  line-height: 46px;
+  position: absolute;
+  left: -140%;
+  font-family: "Share Tech",sans-serif;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
 
 .tabs-content ul.list-view li {
   width: 100%;
@@ -345,13 +399,13 @@ a.list {
 }
 .tabs-content ul.list-view li a h2 {
   position: relative;
-  float: right;
-  width: 70%;
+  float: left;
+  width: 64%;
   text-align: left;
-  text-indent: 10px;
   font-size: 35px;
   margin-top: 20px;
   margin-bottom: 30px;
+  padding-left: 10px;
   background-color: transparent;
 }
 .tabs-content ul.list-view li a img {
@@ -366,7 +420,7 @@ a.list {
   display: block;
   left: 30%;
   padding-left: 10px;
-  width: 60%;
+  width: 30%;
   color: #333;
   font-family: Arial,sans-serif;
   margin-bottom: 50px;
@@ -375,6 +429,9 @@ a.list {
 ul.grid-view li a h2 {
   font-size: 22px;
   top: 38%;
+}
+ul.grid-view li .likes {
+  display: none;
 }
 
 .team {

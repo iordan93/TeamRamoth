@@ -29,26 +29,45 @@ $(function(){
 
 		if(li.hasClass("all")){
 			$(".tabs-content ul li").each(function(){
-				$(this).show()
+				$(this).fadeIn("slow");
 			});
 		}
 
 		if(li.hasClass('when-you')){
-			$(".tabs-content ul li.cat-1").show().siblings().hide();
+			$(".tabs-content ul li.cat-1").fadeIn("slow").siblings().hide();
 		}
 
 		if(li.hasClass('memes')){
-			$(".tabs-content ul li.cat-2").show().siblings().hide();
+			$(".tabs-content ul li.cat-2").fadeIn("slow").siblings().hide();
 		}
 
 		if(li.hasClass('it-life')){
-			$(".tabs-content ul li.cat-3").show().siblings().hide();
+			$(".tabs-content ul li.cat-3").fadeIn("slow").siblings().hide();
 		}
 
 		windowRefresh();
 		e.preventDefault();
 
 	});
+
+	// css transition of social icons and likes buttons
+	$("ul.socials li a").hover(function(){
+		$(this).transition({ rotate: '45deg' });
+	},function(){
+		$(this).transition({ rotate: '0deg' });
+	});
+
+	$(".likes>a").hover(function(){
+		$(this).find("span").transition({scale:1.4});
+	},function(){
+		$(this).find("span").transition({scale:1.0});
+	})
+	// put random values for likes and dislikes
+
+	$(".likes>a").each(function(){
+		$(this).find("span").html(parseInt(Math.random()*200));
+	});
+
 });
 
 function windowRefresh(){
@@ -84,7 +103,7 @@ function centerImages(){
 	// center grid images
 	$("ul.grid-view li").each(function(){
 
-		var anchor=$(this).find("a");
+		var anchor=$(this).find(">a");
 		var img = anchor.find("img");
 		anchor.css({
 			'height':200
@@ -99,7 +118,7 @@ function centerImages(){
 
 	$("ul.list-view li").each(function(){
 
-		var anchor=$(this).find("a");
+		var anchor=$(this).find(">a");
 		var img = anchor.find("img");
 		anchor.css({
 			'height':img.outerHeight()
