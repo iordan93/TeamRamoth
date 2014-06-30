@@ -7,6 +7,7 @@ $(function(){
 		windowRefresh();
 	});
 
+	// change view of images 
 	$(".view-choice a").click(function(e){
 
 		$(".tabs-content ul").removeClass("list-view");
@@ -19,6 +20,35 @@ $(function(){
 		e.preventDefault();
 	});
 	
+
+	// toggle images categories
+	$("ul.tabs li a").click(function(e){
+
+		var li=$(this).parent("li");
+		li.addClass("current").siblings().removeClass("current");
+
+		if(li.hasClass("all")){
+			$(".tabs-content ul li").each(function(){
+				$(this).show()
+			});
+		}
+
+		if(li.hasClass('when-you')){
+			$(".tabs-content ul li.cat-1").show().siblings().hide();
+		}
+
+		if(li.hasClass('memes')){
+			$(".tabs-content ul li.cat-2").show().siblings().hide();
+		}
+
+		if(li.hasClass('it-life')){
+			$(".tabs-content ul li.cat-3").show().siblings().hide();
+		}
+
+		windowRefresh();
+		e.preventDefault();
+
+	});
 });
 
 function windowRefresh(){
