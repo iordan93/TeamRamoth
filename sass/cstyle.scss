@@ -285,7 +285,7 @@ a.list{
         h2{
           position: relative;
           float: left;
-          width:64%;
+          width:60%;
           text-align: left;
           font-size: 35px;
           margin-top:20px;
@@ -295,7 +295,6 @@ a.list{
         }
         img{
           float: left;
-          width:29%;
           height:auto;
           margin-left:1%;
           position: relative;
@@ -353,10 +352,10 @@ ul.grid-view{
 }
 
 .footer{
-  margin-top:30px;
+  margin:30px 0;
   h3{
-    line-height: 40px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 40px;
     font-family: "Share Tech",sans-serif;
     color:#fff;
   }
@@ -368,13 +367,81 @@ ul.grid-view{
   }
 }
 
+@media only screen and (max-width: 900px){
+  .tabs-content{
+    ul.list-view{
+      li{
+
+        a{
+
+          h2{
+            width:40%;
+          }
+          img{
+          }
+          p{
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width:640px){
   ul.tabs li a{ 
     font-size: 16px;
   }
+  .tabs-content{
+    ul.list-view{
+      li{
+
+        a{
+
+          h2,p{
+            width:100%;
+            text-align: center;
+            margin:5px 0;
+            padding: 0;
+          }
+          img{
+            width:300px;
+            margin:auto;
+            display: block;
+            float:none;
+          }
+          p{
+            border-bottom:1px solid #777;
+            padding-bottom: 30px;
+          }
+        }
+        .likes{
+          top:50px;
+          bottom: auto;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width:480px){
+  .header{
+    padding-bottom:0;
+  }
+  a.logo{
+    width: 200px;
+    margin:0 auto;
+    float:none;
+    display: block;
+    span.over-logo{
+      font-size: 40px;
+    }
+  }
+  ul.socials{
+    width: 130px;
+    margin: 30px auto;
+    float: none;
+  }
   ul.tabs li a{ 
     font-size: 14px;
   }

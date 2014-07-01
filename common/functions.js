@@ -92,10 +92,12 @@ $(function () {
         $(this).find("span").transition({ scale: 1.0 });
     })
 
-    $(".tabs-content ul li").click(function (e) {
-        var element = $(e.target);
-        if (!element.hasClass("like") && !element.hasClass("dislike")) {
-            displaySingleItem(e);
+    $(".tabs-content ul li a").click(function (e) {
+        if(!$(this).parent("li").parent("ul").hasClass("list-view")){
+            var element = $(e.target);
+            if (!element.hasClass("like") && !element.hasClass("dislike")) {
+                displaySingleItem(e);
+            }
         }
 
         e.preventDefault();
