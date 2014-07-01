@@ -51,9 +51,7 @@ $(function () {
     $(".view-choice a").click(function (e) {
         var viewType = $(this).attr("class") + "-view";
         setCurrentViewType(viewType);
-
-        displayViewType();
-        
+        windowRefresh();
         e.preventDefault();
     });
 
@@ -94,11 +92,25 @@ $(function () {
         $(this).find("span").transition({ scale: 1.0 });
     })
 
+    $(".tabs-content ul li").click(function (e) {
+        var element = $(e.target);
+        if (!element.hasClass("like") && !element.hasClass("dislike")) {
+            displaySingleItem(e);
+        }
+
+        e.preventDefault();
+    });
+
+    $(".tabs-content a.backButton").click(function (e) {
+        windowRefresh();
+        $(this).hide();
+        e.preventDefault();
+    });
+
     // put random values for likes and dislikes
     //$(".likes>a").each(function () {
     //    $(this).find("span").html(parseInt(Math.random() * 200, 10));
     //});
-
 });
 
 function windowRefresh() {
@@ -205,10 +217,17 @@ function displayItemsFromCategory(category) {
     }
 }
 
-function displayViewType() {
+function displayViewType(type) {
+    type = type || getCurrentViewType();
     $(".tabs-content ul").removeClass("list-view");
     $(".tabs-content ul").removeClass("grid-view");
-    $(".tabs-content ul").addClass(getCurrentViewType());
+    $(".tabs-content ul").addClass(type);
 
     centerImages();
+}
+
+function displaySingleItem(e) {
+    displayViewType("list-view");
+    $(e.currentTarget).siblings().hide();
+    $(".tabs-content a.backButton").show();
 }

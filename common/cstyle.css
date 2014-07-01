@@ -388,6 +388,9 @@ a.list {
   width: 100%;
 }
 
+.tabs-content .backButton {
+  display: none;
+}
 .tabs-content ul.list-view li {
   width: 100%;
   padding: 20px 0;

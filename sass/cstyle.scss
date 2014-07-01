@@ -270,6 +270,9 @@ a.list{
 }
 
 .tabs-content{
+  .backButton{
+	  display: none;
+  }
   ul.list-view{
     li{
       width:100%;

@@ -1,0 +1,39 @@
+/*
+Syntax error: Inconsistent indentation: 8 spaces were used for indentation, but the rest of the document was indented using 14 spaces.
+        on line 4 of D:\TeamRamoth\sass\cstyle.css
+
+1: /*
+2: Syntax error: File to import not found or unreadable: compass/reset.
+3:               Load path: C:/Ruby193/bin (DEPRECATED)
+4:         on line 1 of D:\TeamRamoth\sass\_base.scss
+5:         from line 2 of D:\TeamRamoth\sass\cstyle.scss
+6: 
+7: 1: /*including the reset and base css*\/
+8: 2: @import 'base';
+9: 3: 
+
+Backtrace:
+D:\TeamRamoth\sass\cstyle.css:4
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:491:in `block in tabulate'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:449:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:449:in `each_with_index'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:449:in `tabulate'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:412:in `_to_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/engine.rb:274:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/exec.rb:489:in `watch_or_update'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/exec.rb:346:in `process_result'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/exec.rb:43:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/lib/sass/exec.rb:22:in `parse!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.9/bin/sass:13:in `<top (required)>'
+C:/Ruby193/bin/sass:23:in `load'
+C:/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Inconsistent indentation: 8 spaces were used for indentation, but the rest of the document was indented using 14 spaces.\A         on line 4 of D:\TeamRamoth\sass\cstyle.css\A \A 1: /*\A 2: Syntax error: File to import not found or unreadable: compass/reset.\A 3:               Load path: C:/Ruby193/bin (DEPRECATED)\A 4:         on line 1 of D:\TeamRamoth\sass\_base.scss\A 5:         from line 2 of D:\TeamRamoth\sass\cstyle.scss\A 6: \A 7: 1: /*including the reset and base css*\/\A 8: 2: @import 'base';\A 9: 3: "; }
