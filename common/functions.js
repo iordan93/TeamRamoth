@@ -103,7 +103,6 @@ $(function () {
 
     $(".tabs-content a.backButton").click(function (e) {
         windowRefresh();
-        $(this).hide();
         e.preventDefault();
     });
 
@@ -134,7 +133,9 @@ function windowRefresh() {
         img.css({
             'height': img.width()
         });
-    })
+    });
+
+    $(".tabs-content a.backButton").hide();
 
     displayViewType();
 }
