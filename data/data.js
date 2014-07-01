@@ -1,13 +1,5 @@
 ﻿[
 	{
-		"title": "Nakov knows how to party hard",
-		"description": "Svetlio, as many of his friends know him, is a famous party star",
-		"category": "memes",
-		"imageUrl": "LOTR.png",
-		"likes": "83",
-		"dislikes": "55"
-	},
-	{
 		"title": "Precious memories",
 		"description": "Svetlio, as many of his friends know him, is a famous party star",
 		"category": "memes",

@@ -284,10 +284,11 @@ ul.tabs li.all a {
   background-color: #fff;
 }
 ul.tabs li.when-you a {
-  background-color: #FFD783;
+  background-color: #99CC99;
 }
 ul.tabs li.memes a {
-  background-color: #FF6624;
+  /*background-color: #FF6624;*/
+  background-color: #FFD783;
 }
 ul.tabs li.it-life a {
   background-color: #A8C6FA;
