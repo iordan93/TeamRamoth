@@ -148,15 +148,11 @@ function windowRefresh() {
 
     $(".tabs-content a.backButton").hide();
 
-    $("ul.list-view li >a").fancybox({
-        'padding':0,
-        'centerOnScroll'    : true,
-        'overlayOpacity'    : 0.85,
-        'overlayColor'      : '#333',
-        'hideOnOverlayClick': false
-    });
+
 
     displayViewType();
+
+
 }
 
 function centerImages() {
@@ -244,6 +240,14 @@ function displayViewType(type) {
     $(".tabs-content ul").addClass(type);
 
     centerImages();
+
+    $("ul.list-view li >a").fancybox({
+        'padding':0,
+        'centerOnScroll'    : true,
+        'overlayOpacity'    : 0.85,
+        'overlayColor'      : '#333',
+        'hideOnOverlayClick': false
+    });
 }
 
 function displaySingleItem(e) {
