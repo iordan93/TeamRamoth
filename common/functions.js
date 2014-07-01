@@ -62,7 +62,6 @@ $(function () {
 
     // toggle images categories
     $("ul.tabs li a").click(function (e) {
-
         var li = $(this).parent("li");
         li.addClass("current").siblings().removeClass("current");
 
@@ -71,22 +70,23 @@ $(function () {
                 $(this).fadeIn("slow");
             });
         }
-
-        if (li.hasClass('when-you')) {
-            $(".tabs-content ul li.cat-1").fadeIn("slow").siblings().hide();
-        }
-
-        if (li.hasClass('memes')) {
-            $(".tabs-content ul li.cat-2").fadeIn("slow").siblings().hide();
-        }
-
-        if (li.hasClass('it-life')) {
-            $(".tabs-content ul li.cat-3").fadeIn("slow").siblings().hide();
+        else {
+            var category = li.prop("class")
+                .split(" ")
+                .filter(function (i) {
+                    return i !== "current"
+                })[0];
+            var items = $(".tabs-content ul li");
+            items.filter(function (index, item) {
+                return !$(item).hasClass(category);
+            }).hide();
+            items.filter(function (index, item) {
+                return $(item).hasClass(category);
+            }).fadeIn("slow");
         }
 
         windowRefresh();
         e.preventDefault();
-
     });
 
     // css transition of social icons and likes buttons
