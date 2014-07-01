@@ -92,12 +92,12 @@ $(function () {
         $(this).find("span").transition({ scale: 1.0 });
     })
 
-    $(".tabs-content ul li a").click(function (e) {
+    $(".tabs-content ul.grid-view li>a").click(function (e) {
         if(!$(this).parent("li").parent("ul").hasClass("list-view")){
             var element = $(e.target);
-            if (!element.hasClass("like") && !element.hasClass("dislike")) {
+            //if (!element.hasClass("like") && !element.hasClass("dislike")) {
                 displaySingleItem(e);
-            }
+            //}
         }
 
         e.preventDefault();
@@ -231,6 +231,6 @@ function displayViewType(type) {
 
 function displaySingleItem(e) {
     displayViewType("list-view");
-    $(e.currentTarget).siblings().hide();
+    $(e.currentTarget).parent("li").siblings().hide();
     $(".tabs-content a.backButton").show();
 }
