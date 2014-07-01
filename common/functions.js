@@ -60,8 +60,7 @@ $(function () {
         'padding':0,
         'centerOnScroll'    : true,
         'overlayOpacity'    : 0.85,
-        'overlayColor'      : '#333',
-        'hideOnOverlayClick': false
+        'overlayColor'      : '#333'
     });
 
 
@@ -138,13 +137,13 @@ function windowRefresh() {
         });
     });
 
-    $(".team ul li").each(function () {
-        var img = $(this).find("img");
+    // $(".team ul li").each(function () {
+    //     var img = $(this).find("img");
 
-        img.css({
-            'height': img.width()
-        });
-    });
+    //     img.css({
+    //         'height': img.width()
+    //     });
+    // });
 
     $(".tabs-content a.backButton").hide();
 
@@ -245,8 +244,7 @@ function displayViewType(type) {
         'padding':0,
         'centerOnScroll'    : true,
         'overlayOpacity'    : 0.85,
-        'overlayColor'      : '#333',
-        'hideOnOverlayClick': false
+        'overlayColor'      : '#333'
     });
 }
 

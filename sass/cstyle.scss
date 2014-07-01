@@ -242,6 +242,7 @@ a.list{
       }
       .likes{
         position: absolute;
+        z-index: 999;
         bottom:50px;
         right: 0;
         background-image: url("../images/bg.png");
@@ -289,7 +290,9 @@ a.list{
           float: left;
           width:60%;
           text-align: left;
-          font-size: 35px;
+          font-size: 55px;
+          line-height: 60px;
+          margin-top:40px;
           margin-top:20px;
           margin-bottom:30px;
           padding-left:10px;
@@ -336,6 +339,7 @@ ul.grid-view{
 .team{
   width:660px;
   max-width: 100%;
+
   margin:0 auto;
   padding-top:30px;
   border-top:1px solid #ccc;
@@ -354,12 +358,27 @@ ul.grid-view{
 }
 
 .footer{
-  margin:30px 0;
+  margin:60px 0 30px 0;
+  li{
+    height:250px;
+    position: relative;
+    h4{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
   h3{
     line-height: 60px;
     font-size: 40px;
     font-family: "Share Tech",sans-serif;
     color:#fff;
+  }
+  h4{
+    text-align: center;
+    font-size: 26px;
+    color:#fff;
+    font-family: "Share Tech",sans-serif;
   }
 }
 
@@ -424,6 +443,23 @@ ul.grid-view{
       }
     }
   }
+  .tabs-content ul li .likes a span{
+    right: 0;
+    top:2px;
+    left:auto;
+    color:#fff;
+    font-size:15px;
+  }
+  .tabs-content ul li .likes a.dislike span{
+    top:-7px;
+  }
+  .footer{
+    ul{
+      li{
+        height: 200px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width:480px){
@@ -447,55 +483,24 @@ ul.grid-view{
   ul.tabs li a{ 
     font-size: 14px;
   }
+  .footer{
+    ul{
+      li{
+        height: 160px;
+        h4{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:350px){
+  .footer{
+    ul{
+      li{
+        height: 130px;
+      }
+    }
+  }
 }
 
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 319px) and (max-device-width : 480px) {
-  /* Styles */
-  
-} 
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (fportrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/* Des
-ktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-
-}
