@@ -38,6 +38,7 @@ $(function () {
     for (var i in window.data) {
         memes += $.tmpl("itemTemplate", window.data[i]);
     }
+
     $(".grid-view").html(memes);
 
     windowRefresh();
@@ -48,14 +49,9 @@ $(function () {
 
     // change view of images 
     $(".view-choice a").click(function (e) {
-
-        $(".tabs-content ul").removeClass("list-view");
-        $(".tabs-content ul").removeClass("grid-view");
-
-        $(".tabs-content ul").addClass($(this).attr("class") + "-view");
-
-        centerImages();
-
+        var viewType = $(this).attr("class") + "-view";
+        setCurrentViewType(viewType);
+        windowRefresh();
         e.preventDefault();
     });
 
@@ -66,24 +62,18 @@ $(function () {
         li.addClass("current").siblings().removeClass("current");
 
         if (li.hasClass("all")) {
-            $(".tabs-content ul li").each(function () {
-                $(this).fadeIn("slow");
-            });
+            displayItemsFromCategory("all");
         }
         else {
             var category = li.prop("class")
                 .split(" ")
-                .filter(function (i) {
-                    return i !== "current"
+                .filter(function (cat) {
+                    return cat !== "current"
                 })[0];
-            var items = $(".tabs-content ul li");
-            items.filter(function (index, item) {
-                return !$(item).hasClass(category);
-            }).hide();
-            items.filter(function (index, item) {
-                return $(item).hasClass(category);
-            }).fadeIn("slow");
+            displayItemsFromCategory(category);
         }
+
+        setCurrentCategory(category);
 
         windowRefresh();
         e.preventDefault();
@@ -101,16 +91,30 @@ $(function () {
     }, function () {
         $(this).find("span").transition({ scale: 1.0 });
     })
-    // put random values for likes and dislikes
 
-    $(".likes>a").each(function () {
-        $(this).find("span").html(parseInt(Math.random() * 200, 10));
+    $(".tabs-content ul li").click(function (e) {
+        var element = $(e.target);
+        if (!element.hasClass("like") && !element.hasClass("dislike")) {
+            displaySingleItem(e);
+        }
+
+        e.preventDefault();
     });
 
+    $(".tabs-content a.backButton").click(function (e) {
+        windowRefresh();
+        e.preventDefault();
+    });
+
+    // put random values for likes and dislikes
+    //$(".likes>a").each(function () {
+    //    $(this).find("span").html(parseInt(Math.random() * 200, 10));
+    //});
 });
 
 function windowRefresh() {
     // functionality on window refresh
+    displayItemsFromCategory(getCurrentCategory());
 
     // fix tabs text
     $("ul.tabs li").each(function () {
@@ -123,19 +127,17 @@ function windowRefresh() {
         });
     });
 
-
-
     $(".team ul li").each(function () {
         var img = $(this).find("img");
 
         img.css({
             'height': img.width()
         });
-    })
+    });
 
+    $(".tabs-content a.backButton").hide();
 
-    centerImages();
-
+    displayViewType();
 }
 
 function centerImages() {
@@ -179,4 +181,54 @@ function loadData(url) {
     .done(function (data) {
         window.data = data
     });
+}
+
+function getCurrentCategory() {
+    return sessionStorage.getItem("currentCategory") || "all";
+}
+
+function setCurrentCategory(category) {
+    sessionStorage.setItem("currentCategory", category || "all");
+}
+
+function getCurrentViewType() {
+    return sessionStorage.getItem("viewType") || "grid-view";
+}
+
+function setCurrentViewType(viewType) {
+    sessionStorage.setItem("viewType", viewType);
+}
+
+function displayItemsFromCategory(category) {
+    category = category || "all";
+    $("ul.tabs ." + category).addClass("current").siblings().removeClass("current");
+    var items = $(".tabs-content ul li");
+    if (category === "all") {
+        items.each(function () {
+            $(this).fadeIn("slow")
+        });
+    }
+    else {
+        items.filter(function (index, item) {
+            return !$(item).hasClass(category);
+        }).hide();
+        items.filter(function (index, item) {
+            return $(item).hasClass(category);
+        }).fadeIn("slow");
+    }
+}
+
+function displayViewType(type) {
+    type = type || getCurrentViewType();
+    $(".tabs-content ul").removeClass("list-view");
+    $(".tabs-content ul").removeClass("grid-view");
+    $(".tabs-content ul").addClass(type);
+
+    centerImages();
+}
+
+function displaySingleItem(e) {
+    displayViewType("list-view");
+    $(e.currentTarget).siblings().hide();
+    $(".tabs-content a.backButton").show();
 }
