@@ -207,6 +207,7 @@ a.list{
 
 .tabs-content{
   background-color: #dcdcdc;
+  background-color: rgba(255,255,255,0.6);
   ul{
     li{
       float: left;
@@ -223,7 +224,7 @@ a.list{
           position:absolute;
           width:100%;
           text-align:center;
-          background-color:rgba(255,255,255,0.9);
+          background-color:#fff;
           line-height:30px;
           color:#333;
           font-size:17px;
@@ -241,7 +242,7 @@ a.list{
       }
       .likes{
         position: absolute;
-        bottom:20px;
+        bottom:50px;
         right: 0;
         background-image: url("../images/bg.png");
         border-radius:10px 0 0 10px;
@@ -255,6 +256,7 @@ a.list{
           height: 40px;
           margin:10px 0;
           position: relative;
+          color:#333;
           span{
             line-height: 46px;
             position: absolute;

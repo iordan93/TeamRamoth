@@ -11,6 +11,7 @@
     <!-- link to example font from google fonts which can be easily used with css -->
     <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Share+Tech' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="common/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
     <link href='common/cstyle.css' rel='stylesheet' type='text/css'>
 
     <!-- including html5 shiv for displaying correctly new html5 tags on ie8 or earlier -->
@@ -21,6 +22,8 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+    <script src="common/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="common/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <!-- jquery plugin for css transitions -->
     <script src="common/transit.js"></script>
 
@@ -119,8 +122,8 @@
                 <p><%=description%></p>
             </a>
             <div class="likes clearfix">
-                <a class="like sprite"><span><%=likes%></span></a>
-                <a class="dislike sprite"><span><%=dislikes%></span></a>
+                <a class="like sprite" href="memes/no-server-side.jpg"><span><%=likes%></span></a>
+                <a class="dislike sprite" href="memes/no-server-side.jpg"><span><%=dislikes%></span></a>
             </div>
         </li>
     </script>

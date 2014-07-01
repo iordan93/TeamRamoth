@@ -56,6 +56,15 @@ $(function () {
     });
 
 
+    $(".likes>a").fancybox({
+        'padding':0,
+        'centerOnScroll'    : true,
+        'overlayOpacity'    : 0.85,
+        'overlayColor'      : '#333',
+        'hideOnOverlayClick': false
+    });
+
+
     // toggle images categories
     $("ul.tabs li a").click(function (e) {
         var li = $(this).parent("li");
@@ -138,6 +147,14 @@ function windowRefresh() {
     });
 
     $(".tabs-content a.backButton").hide();
+
+    $("ul.list-view li >a").fancybox({
+        'padding':0,
+        'centerOnScroll'    : true,
+        'overlayOpacity'    : 0.85,
+        'overlayColor'      : '#333',
+        'hideOnOverlayClick': false
+    });
 
     displayViewType();
 }
