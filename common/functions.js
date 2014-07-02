@@ -136,15 +136,7 @@ function windowRefresh() {
             'left': (anchor.outerWidth() - span.outerWidth()) / 2,
         });
     });
-
-    // $(".team ul li").each(function () {
-    //     var img = $(this).find("img");
-
-    //     img.css({
-    //         'height': img.width()
-    //     });
-    // });
-
+    
     $(".tabs-content a.backButton").hide();
 
 
