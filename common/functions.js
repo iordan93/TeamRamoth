@@ -231,7 +231,8 @@ function displayViewType(type) {
     $(".tabs-content ul").addClass(type);
 
     centerImages();
-
+    
+    $('ul.grid-view li >a').unbind('click.fb')
     $("ul.list-view li >a").fancybox({
         'padding':0,
         'centerOnScroll'    : true,
@@ -243,5 +244,5 @@ function displayViewType(type) {
 function displaySingleItem(e) {
     displayViewType("list-view");
     $(e.currentTarget).parent("li").siblings().hide();
-    $(".tabs-content a.backButton").show();
+    $(".tabs-content a.backButton").show().css({'display':'block'});
 }

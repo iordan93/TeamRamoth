@@ -32,18 +32,18 @@
 		"dislikes": "0"
 	},
 	{
-		"title": "THIS IS... Nakov",
-		"description": "One of the classics around here",
+		"title": "When you have no errors",
+		"description": "",
 		"category": "it-life",
-		"imageUrl": "sparta.png",
-		"likes": "123",
-		"dislikes": "45"
+		"imageUrl": "my-code-compiled.jpg",
+		"likes": "133",
+		"dislikes": "25"
 	},
 	{
-		"title": "Just Nakov things",
-		"description": "One of the other classics around here",
-		"category": "it-life",
-		"imageUrl": "dartvader.png",
+		"title": "After Exam",
+		"description": "Nakov said: Задачките са много лесни...",
+		"category": "when-you",
+		"imageUrl": "matrix.png",
 		"likes": "123",
 		"dislikes": "45"
 	}

@@ -397,6 +397,11 @@ a.list {
   font-family: "Share Tech", sans-serif;
   text-decoration: none;
   color: #333;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 70px;
+  text-align: center;
 }
 .tabs-content ul.list-view li {
   width: 100%;
