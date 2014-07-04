@@ -88,14 +88,6 @@
         "dislikes": "1"
     },
     {
-        "title": "Miss SoftUni: The Final",
-        "description": "The competition was really tough!",
-        "category": "when-you",
-        "imageUrl": "harrypottrer.png",
-        "likes": "52",
-        "dislikes": "1"
-    },
-    {
         "title": "SoftUni vs Matrix",
         "description": "No one could ever dream about this!",
         "category": "memes",
