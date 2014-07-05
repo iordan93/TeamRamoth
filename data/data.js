@@ -31,6 +31,7 @@
 		"likes": "56",
 		"dislikes": "0"
 	},
+
 	{
 		"title": "When you have no errors",
 		"description": "",
@@ -40,11 +41,67 @@
 		"dislikes": "25"
 	},
 	{
-		"title": "After Exam",
-		"description": "Nakov said: Задачките са много лесни...",
+		"title": "Who wants to be millionare",
+		"description": "",
+		"category": "memes",
+		"imageUrl": "baivlado1.png",
+		"likes": "133",
+		"dislikes": "25"
+	},
+	{
+		"title": "Exams are comming",
+		"description": "Learn a programming language in one week",
 		"category": "when-you",
-		"imageUrl": "matrix.png",
-		"likes": "123",
-		"dislikes": "45"
+		"imageUrl": "exams-are-coming.jpg",
+		"likes": "133",
+		"dislikes": "25"
+	},
+	{
+		"title": "Making fun with trainers",
+		"description": "",
+		"category": "memes",
+		"imageUrl": "harrypottrer.png",
+		"likes": "139",
+		"dislikes": "2"
+	},
+	{
+		"title": "SoftUni students",
+		"description": "",
+		"category": "when-you",
+		"imageUrl": "matrix2.png",
+		"likes": "189",
+		"dislikes": "32"
+	},
+	{
+		"title": "Hardcore Programmers",
+		"description": "0010010100101101010110110011100",
+		"category": "when-you",
+		"imageUrl": "real-programmers.jpg",
+		"likes": "189",
+		"dislikes": "32"
+	},
+	{
+		"title": "Drinking Beer & code",
+		"description": "It's scientificaly proven that programmers work better when they drink beer. Cheers!",
+		"category": "memes",
+		"imageUrl": "sparta.png",
+		"likes": "189",
+		"dislikes": "32"
+	},
+	{
+		"title": "Nakov & trainers",
+		"description": "",
+		"category": "memes",
+		"imageUrl": "vacancion.png",
+		"likes": "289",
+		"dislikes": "32"
+	},
+	{
+		"title": "Git S*cks",
+		"description": "",
+		"category": "memes",
+		"imageUrl": "when-someone-commits-before-you.gif",
+		"likes": "289",
+		"dislikes": "12"
 	}
 ]
